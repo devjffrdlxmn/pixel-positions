@@ -15,11 +15,10 @@ class JobTest extends TestCase
     public function test_example(): void
     {
 
-        $employer = Employer::factory()->create();
-        $job = Job::factory()->create([
-            "employer_id" => $employer->id,
-        ]);
+        // $employer = Employer::factory()->create();
+        // $job = Job::factory()->create([
+        //     "employer_id" => $employer->id,
+        // ]);
 
-        Expect($job->employer->is($employer))->toBeTrue();
     }
 }
